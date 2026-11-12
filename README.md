@@ -17,9 +17,13 @@ The rule for every note: **write down the command, then write down what it prove
 ```
 week1/
   notes.md            daily commands and what each one proved
+  thu-12-nov.md       full notes for Thursday (cgroups, Python concurrency)
   tiny-container.md   the week's deliverable
-  hog.py              memory hog for the cgroup OOM lab
   leetcode.md         problems, one-line pattern, complexity
+  hog.py              memory hog for the cgroup OOM lab
+  gil_test.py         threads vs processes on CPU work (the GIL)
+  io_test.py          threads on waiting work
+  async_test.py       asyncio: await vs a blocking call
 ```
 
 Each new week gets the same layout: copy `week1/`, then clear the notes.

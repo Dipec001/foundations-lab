@@ -2,7 +2,9 @@
 
 | Problem | Pattern (one line) | Time / space | Solved alone? |
 |---|---|---|---|
-| [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Count each character in a dictionary for both strings, then compare the counts. | O(n) / O(1) (at most 26 keys) | Yes |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/) | | | Redo cold on Saturday |
+| [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Add each number to a set; if it's already there, return True. | O(n) / O(n) | Yes, cold rewrite in 3m 21s |
+| [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Count each character in a dictionary for both strings, then compare the counts. | O(n) / O(1) (at most 26 keys) | Yes, 26m 12s |
 
 ---
 
