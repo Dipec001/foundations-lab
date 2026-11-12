@@ -134,6 +134,8 @@ while True:
    <details><summary>Answer</summary>The inner root `sh`. The outer shell passes everything in the quotes as one string. The root `sh` reads it as a command line and opens the file as root.</details>
 6. Which counter in `memory.events` proves an OOM kill?
    <details><summary>Answer</summary><code>oom_kill</code> (greater than 0).</details>
+7. What's the time complexity of Valid Anagram, and why isn't a set enough?
+   <details><summary>Answer</summary>O(n) time: one pass to count each character in a dictionary (or a 26-slot array), then compare the counts. Space is O(1) for a fixed alphabet of 26 letters. Sorting both strings also works but is O(n log n). A set isn't enough because it throws away counts: "aab" and "abb" both give {a, b}, but they aren't anagrams.</details>
 
 ---
 
