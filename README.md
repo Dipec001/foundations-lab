@@ -18,6 +18,7 @@ The rule for every note: **write down the command, then write down what it prove
 week1/
   notes.md            daily commands and what each one proved
   tiny-container.md   the week's deliverable
+  hog.py              memory hog for the cgroup OOM lab
 ```
 
 Each new week gets the same layout: copy `week1/`, then clear the notes.
