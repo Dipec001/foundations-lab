@@ -112,7 +112,7 @@ while True:
 
 **The memory wall:** when a group reaches `memory.max`, the kernel first tries to reclaim what it can (the `max` counter). When it can't, it OOM-kills a process with SIGKILL. Memory can't be throttled like CPU: once a process holds memory, the only way to get it back is to destroy the process holding it.
 
-**Why 137:** it's a shell convention. Exit codes 0 to 127 are for programs' normal exits, so a process killed by signal N is reported as 128 + N. SIGKILL is 9, so 137. Ctrl+C is SIGINT (2), so 130.
+**Why 137:** it's a shell convention. Exit codes 0 to 127 are for programs' normal exits, so a process killed by signal N is reported as 128 + N. That keeps "killed by SIGKILL" distinguishable from "exited normally". SIGKILL is 9, so 137. Ctrl+C is SIGINT (2), so 130.
 
 **The CPU throttle:** the budget is the limit. `50000 100000` means 50 ms of CPU in each 100 ms window. After that the group is frozen until the next window starts. CPU time can always be handed back later, so the kernel slows the process down instead of killing it.
 
