@@ -19,6 +19,7 @@ week1/
   notes.md            daily commands and what each one proved
   tiny-container.md   the week's deliverable
   hog.py              memory hog for the cgroup OOM lab
+  leetcode.md         problems, one-line pattern, complexity
 ```
 
 Each new week gets the same layout: copy `week1/`, then clear the notes.
