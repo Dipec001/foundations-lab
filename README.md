@@ -18,6 +18,7 @@ The rule for every note: **write down the command, then write down what it prove
 week1/
   notes.md            daily commands and what each one proved
   thu-12-nov.md       full notes for Thursday (cgroups, Python concurrency)
+  fri-13-nov.md       full notes for Friday (container built by hand)
   tiny-container.md   the week's deliverable
   leetcode.md         problems, one-line pattern, complexity
   hog.py              memory hog for the cgroup OOM lab
@@ -33,8 +34,8 @@ Each new week gets the same layout: copy `week1/`, then clear the notes.
 The labs need Linux (namespaces and cgroups don't exist on macOS), so I run them in an Ubuntu VM:
 
 ```bash
-multipass launch 24.04 --name lab --cpus 2 --memory 2G --disk 10G
+multipass launch 24.04 --name lab --cpus 2 --memory 2G --disk 20G
 multipass shell lab
 ```
 
-Ubuntu 24.04 uses cgroups v2 by default. To delete the VM: `multipass delete lab && multipass purge`.
+Ubuntu 24.04 uses cgroups v2 by default. kind needs the 20G disk; an existing VM's disk can be grown (never shrunk) with `multipass set local.<vm>.disk=20G` while it's stopped. To delete the VM: `multipass delete lab && multipass purge`.

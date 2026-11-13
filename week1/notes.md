@@ -91,15 +91,9 @@ Full notes for the day: **[thu-12-nov.md](thu-12-nov.md)**. They cover the cold 
 
 ---
 
-## Fri 13 Nov: Assemble the tiny container, then find a Pod's process in kind
+## Fri 13 Nov: a container built by hand
 
-Write-up goes in [tiny-container.md](tiny-container.md).
-
-| Command | What it proved |
-|---|---|
-| | |
-
-**One thing I didn't know before:**
+Full notes for the day: **[fri-13-nov.md](fri-13-nov.md)**. They cover the big idea (rootfs + namespaces + cgroups), cgroups from both sides, the commands that worked (Alpine rootfs, chroot, /proc, `unshare --pid --fork --mount-proc`), the mistakes table, and Saturday's plan.
 
 ---
 
