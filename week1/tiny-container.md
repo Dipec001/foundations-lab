@@ -1,5 +1,7 @@
 # A container is just a process: I built one by hand
 
+*Published on my website: [divinechukwu.com](https://www.divinechukwu.com/blog/container-is-just-a-process)*
+
 ![A shell running as PID 1 inside a container I built by hand: ps shows only /bin/sh and ps itself](images/pid1.png)
 
 I ran `ps` inside a container I built myself and saw exactly two processes. Then I gave it 50 MB of memory and watched the kernel kill it with exit code 137.

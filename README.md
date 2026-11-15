@@ -8,7 +8,7 @@ The rule for every note: **write down the command, then write down what it prove
 
 | Week | Focus | Deliverable | Depth question (say it aloud, no notes) | Status |
 |---|---|---|---|---|
-| [1](week1/) | Processes, namespaces, cgroups: how a container really works | A tiny container built by hand (unshare, chroot, cgroup limits) plus a one-page explanation | What happens when you run `kubectl apply -f deployment.yaml`? | In progress |
+| [1](week1/) | Processes, namespaces, cgroups: how a container really works | A tiny container built by hand (unshare, chroot, cgroup limits) plus a one-page explanation | What happens when you run `kubectl apply -f deployment.yaml`? | Deliverable done: [article](https://www.divinechukwu.com/blog/container-is-just-a-process) |
 | 2 | Networking: TCP/IP, DNS, TLS, HTTP | An annotated packet capture of one request, from DNS lookup to response | How does a packet get from one Pod to another Pod on a different node? | Not started |
 | 3 | Linux performance and debugging: strace, perf, /proc, I/O | One request traced end to end, with a timing breakdown | You call a Kubernetes Service IP. What actually happens? | Not started |
 

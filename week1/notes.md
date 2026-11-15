@@ -116,4 +116,4 @@ Say it aloud cold on Monday, then 3 more times this week. Write down what I got 
 - **Score (1 to 5):**
 - **What went well:**
 - **What I'll change next week:**
-- **Post for Friday:** "A container is just a process: I built one by hand" (link: )
+- **Post for Friday:** "A container is just a process: I built one by hand" ([published](https://www.divinechukwu.com/blog/container-is-just-a-process))
