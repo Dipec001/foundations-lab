@@ -1,5 +1,7 @@
 # A container is just a process: I built one by hand
 
+![A shell running as PID 1 inside a container I built by hand: ps shows only /bin/sh and ps itself](images/pid1.png)
+
 I ran `ps` inside a container I built myself and saw exactly two processes. Then I gave it 50 MB of memory and watched the kernel kill it with exit code 137.
 
 A container is just a process that is isolated and thinks it's alone. There is no "container" object in the Linux kernel. A container is a normal process with three things added:
@@ -207,6 +209,10 @@ sock_throttled 0
 cat /sys/fs/cgroup/tiny/memory.peak
 52428800
 ```
+
+![The real terminal output: memory.events showing oom_kill 1, and memory.peak at exactly 52428800](images/memory-events.png)
+
+*The real output from my VM.*
 
 `max 282`: the group hit its limit 282 times, and each time the kernel tried to reclaim memory. `oom_kill 1`: in the end it killed one process. And `memory.peak` is exactly 52428800: the group never went one byte over the limit.
 
