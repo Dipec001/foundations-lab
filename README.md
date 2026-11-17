@@ -28,6 +28,7 @@ week1/
 week2/
   notes.md            daily commands and what each one proved
   mon-16-nov.md       full notes for Monday (a Pod's process: shim, pause, cgroups)
+  tue-17-nov.md       full notes for Tuesday (DNS, TCP, TLS timing, TIME_WAIT, congestion)
 ```
 
 Each new week gets a `notes.md`, plus a full file for any day with a long write-up.

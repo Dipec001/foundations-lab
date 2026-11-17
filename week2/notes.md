@@ -13,11 +13,9 @@ Full notes for the day: **[mon-16-nov.md](mon-16-nov.md)**. They cover the Kuber
 
 ---
 
-## Tue 17 Nov: dig +trace, curl -v --trace-time, openssl s_client
+## Tue 17 Nov: one request, from name to response
 
-| Command | What it proved |
-|---|---|
-| | |
+Full notes for the day: **[tue-17-nov.md](tue-17-nov.md)**. They cover DNS from inside the machine outwards (`dig +trace`, TTL, Cloudflare's two roles), the TCP handshake (the kernel answers SYN; the listen-but-never-accept lab), where the time goes in one request to the Kolet API (TCP 69 ms, TLS 342 ms, response 644 ms), TIME_WAIT, and congestion (`cwnd`, CUBIC vs BBR).
 
 ---
 
