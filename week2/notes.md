@@ -19,11 +19,9 @@ Full notes for the day: **[tue-17-nov.md](tue-17-nov.md)**. They cover DNS from 
 
 ---
 
-## Wed 18 Nov: capture one request with tcpdump or Wireshark
+## Wed 18 Nov: capture one request with tcpdump
 
-| Command | What it proved |
-|---|---|
-| | |
+Captured two requests to the Kolet API with `sudo tcpdump -ni enp0s1 -w tcpdumps.pcap 'host api.heykolet.com and port 443'`. The capture and its line-by-line annotation are in **[packet-capture.md](packet-capture.md)**, together with the refused vs timed-out lab.
 
 ---
 
@@ -35,11 +33,9 @@ Full notes for the day: **[tue-17-nov.md](tue-17-nov.md)**. They cover DNS from 
 
 ---
 
-## Fri 20 Nov: the annotated packet capture
+## Fri 20 Nov: the annotated packet capture (deliverable)
 
-| Command | What it proved |
-|---|---|
-| | |
+**[packet-capture.md](packet-capture.md)**: all 31 packets of one HTTPS request, the reading recipe, and where the time went (TCP ~49 ms, TLS ~242 ms, first byte ~313 ms), confirmed by `curl -w`.
 
 ---
 

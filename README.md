@@ -9,7 +9,7 @@ The rule for every note: **write down the command, then write down what it prove
 | Week | Focus | Deliverable | Depth question (say it aloud, no notes) | Status |
 |---|---|---|---|---|
 | [1](week1/) | Processes, namespaces, cgroups: how a container really works | A tiny container built by hand (unshare, chroot, cgroup limits) plus a one-page explanation | What happens when you run `kubectl apply -f deployment.yaml`? | Deliverable done: [article](https://www.divinechukwu.com/blog/container-is-just-a-process) |
-| [2](week2/) | Networking: TCP/IP, DNS, TLS, HTTP | An annotated packet capture of one request, from DNS lookup to response | How does a packet get from one Pod to another Pod on a different node? | In progress |
+| [2](week2/) | Networking: TCP/IP, DNS, TLS, HTTP | An annotated packet capture of one request, from DNS lookup to response | How does a packet get from one Pod to another Pod on a different node? | Deliverable done: [packet capture](week2/packet-capture.md) |
 | 3 | Linux performance and debugging: strace, perf, /proc, I/O | One request traced end to end, with a timing breakdown | You call a Kubernetes Service IP. What actually happens? | Not started |
 
 ## Layout
@@ -29,6 +29,7 @@ week2/
   notes.md            daily commands and what each one proved
   mon-16-nov.md       full notes for Monday (a Pod's process: shim, pause, cgroups)
   tue-17-nov.md       full notes for Tuesday (DNS, TCP, TLS timing, TIME_WAIT, congestion)
+  packet-capture.md   the week's deliverable: one HTTPS request, packet by packet
 ```
 
 Each new week gets a `notes.md`, plus a full file for any day with a long write-up.
